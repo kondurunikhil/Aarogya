@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.yoga.aarogya.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="@drawable/homewall1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="12dp"
+        android:text="Aarogya"
+        android:textColor="#ffff"
+        android:textSize="34sp" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="42dp"
+        android:layout_marginEnd="26dp"
+        android:elevation="30dp"
+        android:onClick="btnClick"
+        app:srcCompat="@drawable/drugs1"
+        android:layout_above="@+id/imageButton6"
+        android:layout_toStartOf="@+id/imageButton4" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageButton"
+        android:layout_marginEnd="23dp"
+        android:elevation="15dp"
+        android:onClick="btnClick1"
+        app:srcCompat="@drawable/disease" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/imageButton"
+        android:layout_marginBottom="88dp"
+        android:elevation="30dp"
+        android:onClick="btnClick2"
+        app:srcCompat="@drawable/con1" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageButton4"
+        android:layout_alignTop="@+id/imageButton6"
+        android:elevation="30dp"
+        android:onClick="btnClick3"
+        app:srcCompat="@drawable/about" />
+
+</RelativeLayout>
